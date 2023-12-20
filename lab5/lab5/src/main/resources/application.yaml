@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/users
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+jwt:
+  secret: 9i3Bk8SJ3CfqIm+v9JJjHc5PGmqNmevaXDLYX4k0sW9hmhuvA6rTNWIM6uISlbVWcn28bMs+gY+P3LLzRytHMQ==
+  access-expire-time: 1800
+  refresh-expire-time: 2592000

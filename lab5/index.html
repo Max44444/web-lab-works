@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div id="login-form" class="container">
+            <h2 class="form-title">Log in form</h2>
+            <div id="permission-denied-message">Permission denied</div>
+            <div class="form">
+                <div id="login-email" class="form-field">
+                    <input type="email" name="" required="false">
+                    <label>Email</label>
+                </div>
+                <div id="login-password" class="form-field">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <button id="sign-in-btn" class="submit-btn">Sign In</button>
+                <button id="register-btn" class="submit-btn">Sign Up</button>
+            </div>
+        </div>
+
+        <div id="register-form" class="container">
+            <h2 class="form-title">Register form</h2>
+            <div class="form">
+                <div id="email" class="form-field">
+                    <input type="email" name="">
+                    <label>Email</label>
+                </div>
+                <div id="password" class="form-field">
+                    <input type="password" name="">
+                    <label>Password</label>
+                </div>
+                <div id="name" class="form-field">
+                    <input type="text" name="">
+                    <label>Name</label>
+                </div>
+                <div id="group" class="form-field">
+                    <input type="text" name="">
+                    <label>Group</label>
+                </div>
+                <div id="variant" class="form-field">
+                    <input type="text" name="">
+                    <label>Variant</label>
+                </div>
+                <div id="phone" class="form-field">
+                    <input type="tel" name="">
+                    <label>Phone</label>
+                </div>
+                <button id="sign-up-btn" class="submit-btn">Register</button>
+                <button id="back-to-login-btn" class="submit-btn">Back</button>
+            </div>
+        </div>
+
+        <div class="container user-info">
+            <h2 class="form-title">User info</h2>
+            <div id="user-info-email" class="form-field">
+                Email: <span></span>
+            </div>
+            <div id="user-info-name" class="form-field">
+                Name: <span></span>
+            </div>
+            <div id="user-info-group" class="form-field">
+                Group: <span></span>
+            </div>
+            <div id="user-info-variant" class="form-field">
+                Variant: <span></span>
+            </div>
+            <div id="user-info-phone" class="form-field">
+                Phone: <span></span>
+            </div>
+            <button id="edit-btn" class="submit-btn">Edit</button>
+            <button id="delete-btn" class="submit-btn">Delete</button>
+            <button id="logout-btn" class="submit-btn">Log out</button>
+            <button id="get-users-btn" class="submit-btn">Get all users</button>
+        </div>
+
+        <div id="edit-form" class="container">
+            <h2 class="form-title">Edit form</h2>
+            <div class="form">
+                <div id="edit-email" class="form-field">
+                    <input type="email" name="">
+                    <label>Email</label>
+                </div>
+                <div id="edit-password" class="form-field">
+                    <input type="password" name="">
+                    <label>Password</label>
+                </div>
+                <div id="edit-name" class="form-field">
+                    <input type="text" name="">
+                    <label>Name</label>
+                </div>
+                <div id="edit-group" class="form-field">
+                    <input type="text" name="">
+                    <label>Group</label>
+                </div>
+                <div id="edit-variant" class="form-field">
+                    <input type="text" name="">
+                    <label>Variant</label>
+                </div>
+                <div id="edit-phone" class="form-field">
+                    <input type="tel" name="">
+                    <label>Phone</label>
+                </div>
+                <button id="confirm-edit-btn" class="submit-btn">Edit</button>
+                <button id="cancel-btn" class="submit-btn">Cancel</button>
+            </div>
+        </div>
+
+        <div id="user-list">
+            <h1>User List</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Email</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Group</th>
+                        <th scope="col">Variant</th>
+                        <th scope="col">phone</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list-items"></tbody>
+            </table>
+            <button id="close-btn" class="submit-btn">Close</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</body>
+</html>

@@ -1,0 +1,171 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 100px auto;
+    width: 400px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.form-title {
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.form-field {
+    position: relative;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+.error {
+    border-bottom: 1px solid red !important;
+}
+
+.form-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.form-field input:focus~label,
+.form-field input:valid~label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 8px 20px;
+    font-size: 16px;
+    margin-top: 15px;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+#sign-in-btn {
+    background-color: darkturquoise;
+    color: #fff;
+}
+
+#sign-up-btn {
+    background-color: darkturquoise;
+    color: #fff;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal .container {
+    background-color: #fff;
+    box-sizing: initial;
+    margin: 250px auto;
+}
+
+.modal-form div {
+    padding: 10px 0;
+}
+
+#register-form {
+    display: none;
+}
+
+#permission-denied-message {
+    color: red;
+    display: none;
+}
+
+.user-info div {
+    padding: 10px 0;
+}
+
+.user-info {
+    display: none;
+}
+
+#edit-form {
+    display: none;
+}
+
+#get-users-btn {
+    display: none;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#user-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+#user-list h1 {
+    text-align: center;
+    width: 100%;
+}
+
+table tr {
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: left;
+}
+
+table th {
+    background: #999;
+    color: #fff;
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#user-list {
+    display: none;
+}
